@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion">
+<html class="theme-next mist use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -80,21 +80,18 @@
 
 
 
-<meta name="description" content="出问题前游戏上线快两天了，中午正忙着写一些gm管理工具，方便运营直接从后台修改游戏数据，给玩家发放一些奖励什么的
-接到玩家投诉后来，就听见运营不断接到玩家打来电话投诉，说自己游戏的数据没了，辛辛苦苦升级的英雄，辛辛苦苦合成的神装，突然就没了，第一个玩家的投诉出现时，我们并没有太注意，以为可能玩家自己修改了游戏数据造成了游戏数据异常，可当第二个、第三个、下午开始不断有玩家投诉的时候，我们才意识到问题">
+<meta name="description" content="出问题前游戏上线快两天了，中午正忙着写一些gm管理工具，方便运营直接从后台修改游戏数据，给玩家发放一些奖励什么的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="游戏服务器首次大bug解决记录">
 <meta property="og:url" content="http://hjcenry.github.io/2016/01/23/游戏服务器首次大bug解决记录/index.html">
 <meta property="og:site_name" content="Henry Blog">
-<meta property="og:description" content="出问题前游戏上线快两天了，中午正忙着写一些gm管理工具，方便运营直接从后台修改游戏数据，给玩家发放一些奖励什么的
-接到玩家投诉后来，就听见运营不断接到玩家打来电话投诉，说自己游戏的数据没了，辛辛苦苦升级的英雄，辛辛苦苦合成的神装，突然就没了，第一个玩家的投诉出现时，我们并没有太注意，以为可能玩家自己修改了游戏数据造成了游戏数据异常，可当第二个、第三个、下午开始不断有玩家投诉的时候，我们才意识到问题">
+<meta property="og:description" content="出问题前游戏上线快两天了，中午正忙着写一些gm管理工具，方便运营直接从后台修改游戏数据，给玩家发放一些奖励什么的">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1472037-6bb383e1f57df6e5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1472037-c0cffcb6a6180b9f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2016-04-22T07:43:05.405Z">
+<meta property="og:updated_time" content="2016-04-24T12:03:13.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="游戏服务器首次大bug解决记录">
-<meta name="twitter:description" content="出问题前游戏上线快两天了，中午正忙着写一些gm管理工具，方便运营直接从后台修改游戏数据，给玩家发放一些奖励什么的
-接到玩家投诉后来，就听见运营不断接到玩家打来电话投诉，说自己游戏的数据没了，辛辛苦苦升级的英雄，辛辛苦苦合成的神装，突然就没了，第一个玩家的投诉出现时，我们并没有太注意，以为可能玩家自己修改了游戏数据造成了游戏数据异常，可当第二个、第三个、下午开始不断有玩家投诉的时候，我们才意识到问题">
+<meta name="twitter:description" content="出问题前游戏上线快两天了，中午正忙着写一些gm管理工具，方便运营直接从后台修改游戏数据，给玩家发放一些奖励什么的">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1472037-6bb383e1f57df6e5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
@@ -102,7 +99,7 @@
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Muse',
+    scheme: 'Mist',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -186,6 +183,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
@@ -202,6 +209,16 @@
               <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-resume">
+          <a href="/resume" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            简历
           </a>
         </li>
       
@@ -324,9 +341,13 @@
 
           
 
-          
-          
+           
 
+          
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-file-o"></i>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+              </span>
           
         </div>
       </header>
@@ -339,8 +360,8 @@
       
 
       
-        <h3 id="出问题前"><a href="#出问题前" class="headerlink" title="出问题前"></a>出问题前</h3><p>游戏上线快两天了，中午正忙着写一些gm管理工具，方便运营直接从后台修改游戏数据，给玩家发放一些奖励什么的</p>
-<h3 id="接到玩家投诉"><a href="#接到玩家投诉" class="headerlink" title="接到玩家投诉"></a>接到玩家投诉</h3><p>后来，就听见运营不断接到玩家打来电话投诉，说自己游戏的数据没了，辛辛苦苦升级的英雄，辛辛苦苦合成的神装，突然就没了，第一个玩家的投诉出现时，我们并没有太注意，以为可能玩家自己修改了游戏数据造成了游戏数据异常，可当第二个、第三个、下午开始不断有玩家投诉的时候，我们才意识到问题的严重性。<br><a id="more"></a></p>
+        <h3 id="出问题前"><a href="#出问题前" class="headerlink" title="出问题前"></a>出问题前</h3><p>游戏上线快两天了，中午正忙着写一些gm管理工具，方便运营直接从后台修改游戏数据，给玩家发放一些奖励什么的<br><a id="more"></a></p>
+<h3 id="接到玩家投诉"><a href="#接到玩家投诉" class="headerlink" title="接到玩家投诉"></a>接到玩家投诉</h3><p>后来，就听见运营不断接到玩家打来电话投诉，说自己游戏的数据没了，辛辛苦苦升级的英雄，辛辛苦苦合成的神装，突然就没了，第一个玩家的投诉出现时，我们并没有太注意，以为可能玩家自己修改了游戏数据造成了游戏数据异常，可当第二个、第三个、下午开始不断有玩家投诉的时候，我们才意识到问题的严重性。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1472037-6bb383e1f57df6e5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="玩家数据修改"></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1472037-c0cffcb6a6180b9f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="玩家数据修改"></p>
 <h3 id="查问题"><a href="#查问题" class="headerlink" title="查问题"></a>查问题</h3><p>这个时候，前端查代码，我也开始查日志，先看游戏日志，发现前端确实发送了英雄数据的存档信息，可到后来，英雄数据也确实就这么没了，这确实是很疑惑的问题。后来，我只能去查mysql数据库的日志，由于mysql使用的是ucloud云数据库，每次要查看它的日志都要先去udb控制台打包日志，下载下来，再用mysqlbinlog工具查看（由于win下cmd不熟悉，我还是喜欢上传到服务器用服务器的grep来查看比较方便），查完mysql日志，我也确实看到了那几条明摆着的insert语句，这就更让人摸不着头脑了，既然游戏数据传上来了，数据库也插入了，那玩家的这些数据去哪儿了？难道服务器被攻击了？不可能啊，我前段时间刚清完病毒啊！正当不知道怎么办的时候，我想根据id查查这几条数据还在不在，结果令人诧异啊，我插入的数据，不在这个玩家下面了，但是根据当时插入时生成的id，我发现它跑到了另一个玩家的数据里，这是为什么？<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setEquipments</span><span class="params">(<span class="keyword">long</span> junZhuId, GameData data)</span> </span>&#123;</span><br><span class="line">  List&lt;EquipmentData&gt; equipments = data.getEquipment();</span><br><span class="line">  <span class="keyword">for</span> (EquipmentData equipmentData : equipments) &#123;</span><br><span class="line">   HeroEquip heroEquip = HibernateUtil.find(HeroEquip.class,</span><br><span class="line">     <span class="string">"where junZhuId="</span> + junZhuId + <span class="string">" and heroName='"</span></span><br><span class="line">       + equipmentData.getHeroName() + <span class="string">"' and equipOrder="</span></span><br><span class="line">       + equipmentData.getEquipmentOrder() + <span class="string">""</span>);</span><br><span class="line">   <span class="keyword">if</span> (heroEquip == <span class="keyword">null</span>) &#123;</span><br><span class="line">    heroEquip = <span class="keyword">new</span> HeroEquip();</span><br><span class="line">    heroEquip.id = TableIDCreator.getTableID(HeroEquip.class, <span class="number">1</span>);</span><br><span class="line">    heroEquip.junZhuId = junZhuId;</span><br><span class="line">    heroEquip.heroName = equipmentData.getHeroName();</span><br><span class="line">    heroEquip.equipOrder = equipmentData.getEquipmentOrder();</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">if</span> (equipmentData.getEquipmentName().equals(<span class="string">"null"</span>)) &#123;<span class="comment">// 卸下装备</span></span><br><span class="line">    HibernateUtil.delete(heroEquip);</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">   &#125;</span><br><span class="line">   heroEquip.equipName = equipmentData.getEquipmentName();</span><br><span class="line">   heroEquip.heroName = equipmentData.getHeroName();</span><br><span class="line">   heroEquip.equipStar = equipmentData.getEquipmentStar();</span><br><span class="line">   HibernateUtil.save(heroEquip);</span><br><span class="line">  &#125;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setHeros</span><span class="params">(<span class="keyword">long</span> junZhuId, GameData data)</span> </span>&#123;</span><br><span class="line">  List&lt;HeroData&gt; heros = data.getHero();</span><br><span class="line">  <span class="keyword">for</span> (HeroData heroData : heros) &#123;</span><br><span class="line">   Hero hero = HibernateUtil.find(Hero.class, <span class="string">"where junZhuId="</span></span><br><span class="line">     + junZhuId + <span class="string">" and name='"</span> + heroData.getHeroName() + <span class="string">"'"</span>);</span><br><span class="line">   <span class="keyword">if</span> (hero == <span class="keyword">null</span>) &#123;</span><br><span class="line">    hero = <span class="keyword">new</span> Hero();</span><br><span class="line">    hero.setId(TableIDCreator.getTableID(Hero.class, <span class="number">1</span>));</span><br><span class="line">    hero.setJunZhuId(junZhuId);</span><br><span class="line">    hero.setName(heroData.getHeroName());</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">if</span> (heroData.getHeroLevel() &gt; hero.getLevel()) &#123;</span><br><span class="line">    hero.setLevel(heroData.getHeroLevel());</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">if</span> (heroData.getHeroStar() &gt; hero.getStar()) &#123;</span><br><span class="line">    hero.setStar(heroData.getHeroStar());</span><br><span class="line">   &#125;</span><br><span class="line">   hero.setSoul(heroData.getHeroSoul());</span><br><span class="line">   hero.setIsWar(heroData.getIsWar());</span><br><span class="line">   HibernateUtil.save(hero);</span><br><span class="line">  &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
@@ -357,6 +378,11 @@
     <div>
       
         
+<div id="wechat_subscriber" style="display: block； padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="http://7xnnwn.com1.z0.glb.clouddn.com/wx.png" alt="Henry He wechat" style="width: 200px; max-width: 100%;"/>
+    <div>我的微信号</div>
+</div>
+
       
     </div>
 
@@ -500,15 +526,15 @@
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="http://7xnnwn.com1.z0.glb.clouddn.com/200002.png"
+               src="/avatar.png"
                alt="Henry He" />
           <p class="site-author-name" itemprop="name">Henry He</p>
-          <p class="site-description motion-element" itemprop="description">Blog of Henry</p>
+          <p class="site-description motion-element" itemprop="description">我们不生产代码，我们只是API的搬运工</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-count">33</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -516,7 +542,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -525,7 +551,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">19</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -536,6 +562,35 @@
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/hjcenry" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/hjcenry" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/2996874513/profile?topnav=1&wvr=6&is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
           
         </div>
 
@@ -570,7 +625,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<div class="copyright" >
   
   &copy; 
   <span itemprop="copyrightYear">2016</span>
@@ -578,6 +635,7 @@
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Henry He</span>
+  
 </div>
 
 <div class="powered-by">
@@ -587,11 +645,27 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
+    NexT.Mist
   </a>
 </div>
 
         
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
+
+
 
         
       </div>
@@ -702,6 +776,11 @@
   
 
   
+
+  
+<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
+</script>
+
 
   
 

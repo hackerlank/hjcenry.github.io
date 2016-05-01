@@ -1,0 +1,415 @@
+<html>
+	<!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>何金成个人简历</title>
+		<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css" tppabs="http://www.fittingapp.com/semantic/dist/semantic.min.css">
+		<link rel="stylesheet" href="style/animate.css" tppabs="http://www.fittingapp.com/style/animate.css">
+
+		<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js" tppabs="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+		<script src="semantic/dist/semantic.min.js" tppabs="http://www.fittingapp.com/semantic/dist/semantic.min.js"></script>
+
+		<link href="http://www.youziku.com/webfont/CSS/b639450b0a54d6ac6997f066f3a7caac" tppabs="http://www.youziku.com/webfont/CSS/b639450b0a54d6ac6997f066f3a7caac" rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" tppabs="http://www.fittingapp.com/js/jquery.fullPage.css" />
+
+		<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+		<script type="text/javascript" src="js/jquery.slimscroll.min.js" tppabs="http://www.fittingapp.com/js/jquery.slimscroll.min.js"></script>
+
+		<script type="text/javascript" src="js/jquery.fullPage.min.js" tppabs="http://www.fittingapp.com/js/jquery.fullPage.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					//                anchors: ['indexSection', 'section2', 'section3', 'section4', 'section5', 'footer'],
+					navigation: true,
+					navigationPosition: 'right',
+					//                navigationTooltips: ['First page', 'Second page', 'Third and last page']
+					sectionsColor: ['#e5e5e5', '#fff', '#e9e9e9', '#fff', '#e9e9e9', '#fff'],
+					onLeave: function(index, nextIndex, direction) {
+						var leavingSection = $(this);
+						if (index == 2) {
+							//                        alert("Section 2 ended loading");
+							$('#section2 img').addClass('animated fadeOutDown');
+						};
+						if (index == 3) {
+							//                        alert("Section 2 ended loading");
+							$('#section3 img').addClass('animated fadeOutDown');
+						};
+						if (index == 4) {
+							//                        alert("Section 2 ended loading");
+							//							$('#section4 ul').addClass('animated fadeOutDown');
+							$('#section4 .skill').addClass('animated fadeOutDown');
+						};
+						if (index == 5) {
+							//                        alert("Section 2 ended loading");
+							$('#section5 img').addClass('animated fadeOutDown');
+						};
+						if (index == 6) {
+							//                        alert("Section 2 ended loading");
+							$('#section6 img').addClass('animated fadeOutDown');
+						};
+					},
+					'afterLoad': function(anchorLink, index) {
+						if (index == 2) {
+							//                        alert("Section 2 ended loading");
+							$('#section2 img').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInLeft');
+						};
+						if (index == 3) {
+							//                        alert("Section 2 ended loading");
+							$('#section3 img').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInRight');
+						};
+						if (index == 4) {
+							//                        alert("Section 2 ended loading");
+							//							$('#section4 ul').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInLeft');
+							$('#section4 .skill').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInLeft');
+						};
+						if (index == 5) {
+							//                        alert("Section 2 ended loading");
+							$('#section5 img').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInRight');
+						};
+						if (index == 6) {
+							//                        alert("Section 2 ended loading");
+							$('#section6 img').removeClass('animated fadeOutDown').removeClass('hidden').addClass('animated fadeInRight');
+						};
+					}
+				});
+			});
+		</script>
+		<link rel="stylesheet" type="text/css" href="style/main.css" tppabs="http://www.fittingapp.com/style/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/resume.css" />
+		<script src="js/resume.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+
+		<div id="fullpage">
+			<div class="section" id="indexSection">
+				<!--   <div class="blk-sidebar">
+            <img class="ui medium centered image" src="images/logo.png">
+        </div>-->
+				<div class="ui padded grid">
+					<div class="three wide mobile two wide tablet one wide computer black column">
+						<p><span class="ui centered image animated fadeInDown logo">He</span></p>
+					</div>
+					<div class="thirteen wide mobile fourteen wide tablet fifteen wide computer column">
+						<div class="ui page grid bottom-align">
+							<div class="row animated fadeInUp">
+								<h1>
+			                       何金成 <br>
+			                       个人简历 <br>
+                       			</h1>
+							</div>
+							<div class="row animated fadeInRight">
+								<div class="row basiclayer text">
+									<ul>
+										<li>联系电话:17710122410</li>
+										<li>户口地：四川省绵阳市</li>
+										<li>学历:全日制本科</li>
+										<li>毕业院校:东北石油大学（一本）</li>
+										<li>性别:男</li>
+									</ul>
+									<ul>
+										<li>电子邮箱:hejincheng1209@gmail.com</li>
+										<li>现居地：北京市昌平区龙泽</li>
+										<li>英语:六级</li>
+										<li>专业:软件工程</li>
+										<li>年龄:23</li>
+									</ul>
+									<div class="clear"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--色块网格-->
+			</div>
+			<!--section1-->
+			<div class="section" id="section2">
+				<div class="ui middle aligned container centered stackable grid container">
+					<div class="six wide column">
+						<img class="hidden ui medium centered image" src="images/java.jpg" alt="" />
+					</div>
+					<div class="six wide centered right floated column">
+						<h1 class="chinese">求职意向<br/>Java软件工程师</h1>
+						<p class="">
+							从事Java开发
+							<br/> 热衷于研究新技术，对html5有研究
+							<br/> 做过Web后台开发，微信后台开发，游戏服务器开发
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="section3">
+				<div class="ui middle aligned container centered stackable grid container">
+					<div class="ten wide centered column">
+						<h1>工作经历</h1>
+						<div class="work">
+							<p>
+								<span class="time">2014.07-2015.03</span>&nbsp;&nbsp;
+								<span class="company">摩卡软件（天津）有限公司北京分公司（实习）</span>
+							</p>
+							<ul class="text">
+								<li>
+									<span class="companyinfo">公司描述：属于华胜天成子公司，主要提供it服务和解决方案，目前在向互联网公司转型</span>
+								</li>
+								<li>
+									<span class="dept">部门：新媒体业务部</span>
+								</li>
+								<li>
+									<span class="job">职位：Java软件工程师</span>
+								</li>
+								<li>
+									主要职责：负责中国移动客服系统活动模块开发，以及天津广电微网站后台开发
+								</li>
+							</ul>
+
+						</div>
+						<div class="work">
+							<p>
+								<span class="time">2015.03-2015.12 </span>&nbsp;&nbsp;
+								<span class="company">北京漫游谷信息技术有限公司</span>
+							</p>
+							<ul class="text">
+								<li>
+									<span class="companyinfo">公司描述：北京游戏谷，以页游起家的游戏研发公司，主要游戏产品有七雄争霸、横扫西游、全民主公等，现在公司在平衡发展页游和手游</span>
+								</li>
+								<li>
+									<span class="dept">部门：七雄无双</span>
+								</li>
+								<li>
+									<span class="job">职位：Java软件工程师</span>
+								</li>
+								<li>
+									主要职责：负责mmorpg手游《七雄无双》的Java服务器端开发工作
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="six wide column">
+						<div class="worklogos">
+							<img class="hidden ui centered image worklogo" src="images/mochalogo.png" alt="" />
+							<img class="hidden ui centered image worklogo pro" src="images/tjgd.gif" alt="" />
+							<img class="hidden ui centered image worklogo" src="images/youxigulogo.png" alt="" />
+							<img class="hidden ui centered image worklogo pro" src="images/hsxy.png" alt="" />
+							<img class="hidden ui centered image worklogo pro" src="images/qmzg.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="section4">
+				<div class="ui middle aligned container centered stackable grid container">
+					<div class="ten wide column skills">
+						<div class="skill hidden ui medium centered image">
+							<button class="arrows" id="skillpre">
+								<</button>
+									<span id="skillNum">1/3</span>
+									<button class="arrows" id="skillafter">></button>
+									<div class="skilllist text">
+										<div class="skill1">
+											<p>Java</p>
+											<ul>
+												<li>熟悉Spring、Hibernate、MyBatis等主流开源框架</li>
+												<li>熟悉Java多线程、并发、线程安全</li>
+												<li>熟悉Java网络编程</li>
+												<li>熟悉微信公众号后台开发接口和流程</li>
+												<li>熟悉常用Linux命令</li>
+												<li>熟悉SQL语句、Mysql开发</li>
+												<li>熟悉Tomcat及其应用</li>
+												<li>熟悉Memcached/Redis等缓存机制</li>
+												<li>对MongoDB有了解</li>
+												<li>熟悉Maven、Git、SVN、Eclipse等工具</li>
+											</ul>
+										</div>
+										<div class="skill2">
+											<p>Web前端（此页面为本人制作）</p>
+											<ul>
+												<li>熟悉html5/xhtml/JavaScript/css3等前端技术</li>
+												<li>熟悉JQuery/mui等常用前端框架，但不依赖它们</li>
+												<li>熟悉Javascript异步执行机制原理</li>
+												<li>熟练使用Hbuilder开发webapp、移动app</li>
+												<li>熟练使用Web调试工具</li>
+												<li>熟悉Ajax运作机制</li>
+											</ul>
+										</div>
+										<div class="skill3">
+											<p>其他</p>
+											<ul>
+												<li>熟悉Cocos2d-x/Cocos2d-js</li>
+												<li>熟悉Android开发</li>
+												<li>了解go语言</li>
+												<li>了解node.js及其异步执行原理 </li>
+												<li>有良好的编程习惯，熟悉常用设计模式 </li>
+												<li>有较强的解决问题能力及bug处理能力</li>
+												<li>能快速上手学习新技术以解决当前问题</li>
+											</ul>
+										</div>
+									</div>
+						</div>
+					</div>
+					<div class="six wide centered right floated column">
+						<h1>工作技能</h1>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="section5">
+				<div class="ui middle aligned container centered stackable grid container">
+					<div class="ten wide centered column">
+						<h1>项目经验</h1>
+						<button class="arrows" id="projectpre">
+							<</button>
+								<span id="projectNum">1/2</span>
+								<button class="arrows" id="projectafter">></button>
+								<div class="project project1 text">
+									项目一：七雄无双
+									<ol>
+										<li>项目时间：<span class="time">2015.03-2015.12</span></li>
+										<li>项目描述：
+											<p>3D手游，以战国七雄为背景的RPG手游，包含PVP、PVE、MMO等众多玩法，8.25进行了第一轮封测，10.27进行了第二轮封测，目前处于1.1版本研发中</p>
+										</li>
+										<li>项目职责
+											<ul>
+												<li>独立开发活动、CDKey、签到、首冲、排行榜、好友、黑名单、符文、技能养成等模块</li>
+												<li>负责给运营提供进行游戏管理的gm接口</li>
+											</ul>
+										</li>
+										<li>技术要点：
+											<ul>
+												<li>网络层使用Mina进行通信</li>
+												<li>数据持久化使用Hibernate4.0框架</li>
+												<li>使用Redis进行部分游戏数据持久化</li>
+												<li>使用Memcache缓存游戏数据</li>
+												<li>采用Mysql进行数据存储</li>
+												<li>使用Google的Protobuffer与客户端（unity）进行数据交互</li>
+												<li>使用Json与运营GM管理平台交互数据</li>
+												<li>使用Ant进行项目管理</li>
+												<li>使用SVN管理代码</li>
+											</ul>
+										</li>
+									</ol>
+								</div>
+								<div class="project project2 text">
+									<p>项目二：天津广电微网站</p>
+									<ol>
+										<li>项目时间：<span class="time">2014.09-2015.03</span></li>
+										<li>项目描述：
+											<p>为天津广电微信公众号的用户提供服务的微网站，包含论坛、电商等模块，并利用微信接口提供其他功能，目前已于天津广电微信公众号投入使用</p>
+										</li>
+										<li>项目职责
+											<ul>
+												<li class="text">负责与前端界面的数据交互</li>
+												<li class="text">负责微网站后台开发工作</li>
+											</ul>
+										</li>
+										<li>技术要点：
+											<ul>
+												<li>使用Spring集成框架</li>
+												<li>使用SpringMVC进行严格的MVC分层，使业务与逻辑分离</li>
+												<li>使用MyBatis进行数据存储</li>
+												<li>搭建Memcach和Redis进行数据缓存</li>
+												<li>使用Maven管理项目</li>
+												<li>微信端页面使用Freemarker模板引擎</li>
+												<li>使用Json/Xml与前端进行数据交互</li>
+												<li>使用SVN管理代码</li>
+												<li>使用微信高级接口</li>
+											</ul>
+										</li>
+									</ol>
+								</div>
+					</div>
+					<div class="six wide column">
+						<!--<img class="hidden ui medium centered image" src="images/ft4.png" tppabs="http://www.fittingapp.com/images/ft4.png" alt="" />-->
+						<div class="project1img">
+							<button class="arrows" id="qxpre">
+								<</button>
+									<span id="qxNum">1/5</span>
+									<button class="arrows" id="qxafter">></button>
+									<div class="imgs">
+										<img class="hidden ui medium centered image" src="images/qx/1.jpg" />
+									</div>
+						</div>
+						<div class="project2img">
+							<button class="arrows" id="tjgdpre">
+								<</button>
+									<span id="tjgdNum">1/5</span>
+									<button class="arrows" id="tjgdafter">></button>
+									<div class="imgs">
+										<img class="hidden ui medium centered image" src="images/tjgd/1.png" />
+									</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section" id="section6">
+				<div class="ui middle aligned container centered stackable grid container">
+					<div class="ten wide centered column">
+						<h1>教育经历</h1>
+						<p>
+							<span class="time">2011.09-2015.07<span>
+							<br/>东北石油大学软件工程专业
+							<br/>英语等级：国家英语六级
+						</p>
+					</div>
+					<div class="six wide column">
+						<img class="hidden ui medium centered image" src="images/dy.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="section fp-auto-height" id="footer">
+				<div class="ui equal width center aligned grid">
+					<div class="row">
+						<div class="column">
+							<h1>谢谢观看</h1>
+						</div>
+					</div>
+					<div class="ui horizontal divider"><i class="tag icon"></i></div>
+					<div class="row">
+						<div class="column">
+							<p>感谢看完我的简历，希望有机会能与进入贵公司，与大家共事
+								<p>
+									PDF简历&nbsp;&nbsp;<a class="text" href="resume.pdf">浏览</a>&nbsp;|&nbsp;<a class="text" href="resume.zip">下载</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="column"></div>
+					</div>
+				</div>
+				<div class="ui center aligned divided relaxed grid">
+					<div class="doubling five column row">
+						<div class="column">
+							<div class="ui icon header">
+								<i class="grey mail icon"></i>
+							</div>
+							<p>hejincheng1209@gmail.com</p>
+						</div>
+						<div class="column">
+							<div class="ui icon header">
+								<i class="grey weibo icon"></i>
+							</div>
+							<p>个人简历H5版本</p>
+						</div>
+						<div class="column">
+							<div class="ui icon header">
+								<i class="grey pin icon"></i>
+							</div>
+							<p>北京市昌平区</p>
+						</div>
+						<div class="column">
+							<div class="ui icon header">
+								<i class="grey call icon"></i>
+							</div>
+							<p>17710122410</p>
+						</div>
+					</div>
+					<div class="black row">
+						<div class="column">
+							<span class="ui image">made by Henry</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>

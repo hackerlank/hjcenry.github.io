@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion">
+<html class="theme-next mist use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -80,23 +80,23 @@
 
 
 
-<meta name="description" content="前言前段时间由于公司的一款弱联网游戏急着上线，没能及时分享，现在基本做的差不多，剩下的就是测试阶段了（本来说元旦来分享一下服务器技术的）。公司的这款游戏已经上线一年多了，在我来之前一直都是单机版本，由于人民群众的力量太强大，各种内购破解，刷体力，刷金币，刷钻石版本的出现，公司才决定将这款游戏转型为弱联网游戏，压制百分之八十的破解用户（毕竟原则上还是属于单机游戏，不可能做到百分之百的防破解），招了我">
+<meta name="description" content="前言前段时间由于公司的一款弱联网游戏急着上线，没能及时分享，现在基本做的差不多，剩下的就是测试阶段了（本来说元旦来分享一下服务器技术的）。公司的这款游戏已经上线一年多了，在我来之前一直都是单机版本，由于人民群众的力量太强大，各种内购破解，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java游戏服务器成长之路——弱联网游戏篇（源码分析）">
 <meta property="og:url" content="http://hjcenry.github.io/2016/01/17/Java游戏服务器成长之路——弱联网游戏篇（源码分析）/index.html">
 <meta property="og:site_name" content="Henry Blog">
-<meta property="og:description" content="前言前段时间由于公司的一款弱联网游戏急着上线，没能及时分享，现在基本做的差不多，剩下的就是测试阶段了（本来说元旦来分享一下服务器技术的）。公司的这款游戏已经上线一年多了，在我来之前一直都是单机版本，由于人民群众的力量太强大，各种内购破解，刷体力，刷金币，刷钻石版本的出现，公司才决定将这款游戏转型为弱联网游戏，压制百分之八十的破解用户（毕竟原则上还是属于单机游戏，不可能做到百分之百的防破解），招了我">
-<meta property="og:updated_time" content="2016-04-22T07:35:13.288Z">
+<meta property="og:description" content="前言前段时间由于公司的一款弱联网游戏急着上线，没能及时分享，现在基本做的差不多，剩下的就是测试阶段了（本来说元旦来分享一下服务器技术的）。公司的这款游戏已经上线一年多了，在我来之前一直都是单机版本，由于人民群众的力量太强大，各种内购破解，">
+<meta property="og:updated_time" content="2016-04-24T12:09:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java游戏服务器成长之路——弱联网游戏篇（源码分析）">
-<meta name="twitter:description" content="前言前段时间由于公司的一款弱联网游戏急着上线，没能及时分享，现在基本做的差不多，剩下的就是测试阶段了（本来说元旦来分享一下服务器技术的）。公司的这款游戏已经上线一年多了，在我来之前一直都是单机版本，由于人民群众的力量太强大，各种内购破解，刷体力，刷金币，刷钻石版本的出现，公司才决定将这款游戏转型为弱联网游戏，压制百分之八十的破解用户（毕竟原则上还是属于单机游戏，不可能做到百分之百的防破解），招了我">
+<meta name="twitter:description" content="前言前段时间由于公司的一款弱联网游戏急着上线，没能及时分享，现在基本做的差不多，剩下的就是测试阶段了（本来说元旦来分享一下服务器技术的）。公司的这款游戏已经上线一年多了，在我来之前一直都是单机版本，由于人民群众的力量太强大，各种内购破解，">
 
 
 
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Muse',
+    scheme: 'Mist',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -180,6 +180,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
@@ -196,6 +206,16 @@
               <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-resume">
+          <a href="/resume" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            简历
           </a>
         </li>
       
@@ -318,9 +338,13 @@
 
           
 
-          
-          
+           
 
+          
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-file-o"></i>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+              </span>
           
         </div>
       </header>
@@ -333,8 +357,7 @@
       
 
       
-        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>前段时间由于公司的一款弱联网游戏急着上线，没能及时分享，现在基本做的差不多，剩下的就是测试阶段了（本来说元旦来分享一下服务器技术的）。公司的这款游戏已经上线一年多了，在我来之前一直都是单机版本，由于人民群众的力量太强大，各种内购破解，刷体力，刷金币，刷钻石版本的出现，公司才决定将这款游戏转型为弱联网游戏，压制百分之八十的破解用户（毕竟原则上还是属于单机游戏，不可能做到百分之百的防破解），招了我这一个服务器来进行后台的开发。什么是弱联网游戏？在这之前我也没有做过弱联网游戏的服务器，但是按照我对策划对我提出的需求的理解，就是游戏的大部分逻辑运算都是在移动端本地完成，而服务器要做的就是登录、支付验证、游戏存档读档的工作，这相对于我在上家公司做的ARPG那种强联网游戏要简单多了，那款ARPG就是所有游戏产出，逻辑运算都是在服务器端完成，服务器要完成大部分的游戏运算，而我做的这款弱联网游戏，只需要简简单单的登录、验证、读取和存储。这一类的游戏，做的最火的，就是腾讯早期手游中的《全民消消乐》《节奏大师》《天天飞车》（天天飞车后来加的实时竞赛应该还是强联网的实时数据）等，这类游戏中，服务器就只需要负责游戏数据存储和一些简单的社交功能，例如qq好友送红心送体力的等。</p>
-<a id="more"></a>
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>前段时间由于公司的一款弱联网游戏急着上线，没能及时分享，现在基本做的差不多，剩下的就是测试阶段了（本来说元旦来分享一下服务器技术的）。公司的这款游戏已经上线一年多了，在我来之前一直都是单机版本，由于人民群众的力量太强大，各种内购破解，<a id="more"></a>刷体力，刷金币，刷钻石版本的出现，公司才决定将这款游戏转型为弱联网游戏，压制百分之八十的破解用户（毕竟原则上还是属于单机游戏，不可能做到百分之百的防破解），招了我这一个服务器来进行后台的开发。什么是弱联网游戏？在这之前我也没有做过弱联网游戏的服务器，但是按照我对策划对我提出的需求的理解，就是游戏的大部分逻辑运算都是在移动端本地完成，而服务器要做的就是登录、支付验证、游戏存档读档的工作，这相对于我在上家公司做的ARPG那种强联网游戏要简单多了，那款ARPG就是所有游戏产出，逻辑运算都是在服务器端完成，服务器要完成大部分的游戏运算，而我做的这款弱联网游戏，只需要简简单单的登录、验证、读取和存储。这一类的游戏，做的最火的，就是腾讯早期手游中的《全民消消乐》《节奏大师》《天天飞车》（天天飞车后来加的实时竞赛应该还是强联网的实时数据）等，这类游戏中，服务器就只需要负责游戏数据存储和一些简单的社交功能，例如qq好友送红心送体力的等。</p>
 <h3 id="概括"><a href="#概括" class="headerlink" title="概括"></a>概括</h3><p>公司招聘我进来做服务器开发其实是为了两个项目，一个是这款单机转弱联网的游戏，另一款是公司准备拿来发家致富的SLG——战争策略游戏。从入职到现在，我一直是在支持弱联网游戏的开发，到现在，基本上这款游戏也算是差不多了，这款游戏的目前版本仍然基本属于单机，到年后会加上竞技场功能，到时候可能就会需要实时的数据交互了，现在就先来分享一下目前这个版本开发的过程。<br>要开发一个后台系统，首先要考虑的就是架构了，系统的高效稳定性，可扩展性。在游戏开发中，我认为后台服务器无非负责几个大得模块：</p>
 <ol>
 <li>网络通信</li>
@@ -372,6 +395,11 @@
     <div>
       
         
+<div id="wechat_subscriber" style="display: block； padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="http://7xnnwn.com1.z0.glb.clouddn.com/wx.png" alt="Henry He wechat" style="width: 200px; max-width: 100%;"/>
+    <div>我的微信号</div>
+</div>
+
       
     </div>
 
@@ -515,15 +543,15 @@
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="http://7xnnwn.com1.z0.glb.clouddn.com/200002.png"
+               src="/avatar.png"
                alt="Henry He" />
           <p class="site-author-name" itemprop="name">Henry He</p>
-          <p class="site-description motion-element" itemprop="description">Blog of Henry</p>
+          <p class="site-description motion-element" itemprop="description">我们不生产代码，我们只是API的搬运工</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-count">33</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -531,7 +559,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -540,7 +568,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">19</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -551,6 +579,35 @@
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/hjcenry" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/hjcenry" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/2996874513/profile?topnav=1&wvr=6&is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
           
         </div>
 
@@ -585,7 +642,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<div class="copyright" >
   
   &copy; 
   <span itemprop="copyrightYear">2016</span>
@@ -593,6 +652,7 @@
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Henry He</span>
+  
 </div>
 
 <div class="powered-by">
@@ -602,11 +662,27 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
+    NexT.Mist
   </a>
 </div>
 
         
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
+
+
 
         
       </div>
@@ -717,6 +793,11 @@
   
 
   
+
+  
+<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
+</script>
+
 
   
 

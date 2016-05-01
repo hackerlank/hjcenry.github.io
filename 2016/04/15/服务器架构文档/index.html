@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion">
+<html class="theme-next mist use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -80,18 +80,18 @@
 
 
 
-<meta name="description" content="不少同学或朋友都问过我，Java做游戏服务器跟Java web有什么不同，趁着这次这个游戏差不多完工，我写了一个服务器架构的文档，当然，每个人都能设计不同的架构，有好的有坏的，我这里给的只是我个人的一种设计，其中哪些设计不合理，还请多指教。由于写文档用的服务器上搭建的showdoc，一种免费的在线文档系统，使用的md，于是我就直接copy到简书来了，不过文档中的敏感信息都处理了，游戏名就不透露啦，">
+<meta name="description" content="不少同学或朋友都问过我，Java做游戏服务器跟Java web有什么不同，趁着这次这个游戏差不多完工，我写了一个服务器架构的文档，当然，每个人都能设计不同的架构，有好的有坏的，我这里给的只是我个">
 <meta property="og:type" content="article">
 <meta property="og:title" content="服务器架构文档">
 <meta property="og:url" content="http://hjcenry.github.io/2016/04/15/服务器架构文档/index.html">
 <meta property="og:site_name" content="Henry Blog">
-<meta property="og:description" content="不少同学或朋友都问过我，Java做游戏服务器跟Java web有什么不同，趁着这次这个游戏差不多完工，我写了一个服务器架构的文档，当然，每个人都能设计不同的架构，有好的有坏的，我这里给的只是我个人的一种设计，其中哪些设计不合理，还请多指教。由于写文档用的服务器上搭建的showdoc，一种免费的在线文档系统，使用的md，于是我就直接copy到简书来了，不过文档中的敏感信息都处理了，游戏名就不透露啦，">
+<meta property="og:description" content="不少同学或朋友都问过我，Java做游戏服务器跟Java web有什么不同，趁着这次这个游戏差不多完工，我写了一个服务器架构的文档，当然，每个人都能设计不同的架构，有好的有坏的，我这里给的只是我个">
 <meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/%E6%9E%B6%E6%9E%84%E5%85%B3%E7%B3%BB%E5%9B%BE.png">
 <meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%9B%BE.png">
-<meta property="og:updated_time" content="2016-04-22T07:40:31.738Z">
+<meta property="og:updated_time" content="2016-04-24T12:02:13.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="服务器架构文档">
-<meta name="twitter:description" content="不少同学或朋友都问过我，Java做游戏服务器跟Java web有什么不同，趁着这次这个游戏差不多完工，我写了一个服务器架构的文档，当然，每个人都能设计不同的架构，有好的有坏的，我这里给的只是我个人的一种设计，其中哪些设计不合理，还请多指教。由于写文档用的服务器上搭建的showdoc，一种免费的在线文档系统，使用的md，于是我就直接copy到简书来了，不过文档中的敏感信息都处理了，游戏名就不透露啦，">
+<meta name="twitter:description" content="不少同学或朋友都问过我，Java做游戏服务器跟Java web有什么不同，趁着这次这个游戏差不多完工，我写了一个服务器架构的文档，当然，每个人都能设计不同的架构，有好的有坏的，我这里给的只是我个">
 <meta name="twitter:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/%E6%9E%B6%E6%9E%84%E5%85%B3%E7%B3%BB%E5%9B%BE.png">
 
 
@@ -99,7 +99,7 @@
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Muse',
+    scheme: 'Mist',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -183,6 +183,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
@@ -199,6 +209,16 @@
               <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-resume">
+          <a href="/resume" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            简历
           </a>
         </li>
       
@@ -321,9 +341,13 @@
 
           
 
-          
-          
+           
 
+          
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-file-o"></i>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+              </span>
           
         </div>
       </header>
@@ -336,7 +360,7 @@
       
 
       
-        <p>不少同学或朋友都问过我，Java做游戏服务器跟Java web有什么不同，趁着这次这个游戏差不多完工，我写了一个服务器架构的文档，当然，每个人都能设计不同的架构，有好的有坏的，我这里给的只是我个人的一种设计，其中哪些设计不合理，还请多指教。由于写文档用的服务器上搭建的showdoc，一种免费的在线文档系统，使用的md，于是我就直接copy到简书来了，不过文档中的敏感信息都处理了，游戏名就不透露啦，服务器的ip端口，账号密码，更是不能透露啦。这里就让那些还不明白游戏服务器的同学们，大致了解下服务器的架构<br><a id="more"></a></p>
+        <p>不少同学或朋友都问过我，Java做游戏服务器跟Java web有什么不同，趁着这次这个游戏差不多完工，我写了一个服务器架构的文档，当然，每个人都能设计不同的架构，有好的有坏的，我这里给的只是我个<a id="more"></a>人的一种设计，其中哪些设计不合理，还请多指教。由于写文档用的服务器上搭建的showdoc，一种免费的在线文档系统，使用的md，于是我就直接copy到简书来了，不过文档中的敏感信息都处理了，游戏名就不透露啦，服务器的ip端口，账号密码，更是不能透露啦。这里就让那些还不明白游戏服务器的同学们，大致了解下服务器的架构</p>
 <h1 id="服务器架构文档"><a href="#服务器架构文档" class="headerlink" title="**服务器架构文档"></a><em>**</em>服务器架构文档</h1><h2 id="一、服务器架构图"><a href="#一、服务器架构图" class="headerlink" title="一、服务器架构图"></a>一、服务器架构图</h2><p>根据需求，可将服务器大致分为登录服务器、逻辑服务器、文件服务器、支付服务器、国战服务器和聊天服务器</p>
 <p><a href="http://7xnnwn.com1.z0.glb.clouddn.com/%E6%9E%B6%E6%9E%84%E5%85%B3%E7%B3%BB%E5%9B%BE.png" title="服务器架构图" target="_blank" rel="external"><img src="http://7xnnwn.com1.z0.glb.clouddn.com/%E6%9E%B6%E6%9E%84%E5%85%B3%E7%B3%BB%E5%9B%BE.png" alt="服务器架构图" title="服务器架构图"></a></p>
 <h3 id="1-服务器间进程通信"><a href="#1-服务器间进程通信" class="headerlink" title="1.服务器间进程通信"></a>1.服务器间进程通信</h3><p>服务器之间的进程通信使用json-rpc，json-rpc的底层为短连接实现，通信为json数据格式</p>
@@ -518,6 +542,11 @@
     <div>
       
         
+<div id="wechat_subscriber" style="display: block； padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="http://7xnnwn.com1.z0.glb.clouddn.com/wx.png" alt="Henry He wechat" style="width: 200px; max-width: 100%;"/>
+    <div>我的微信号</div>
+</div>
+
       
     </div>
 
@@ -565,13 +594,17 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/22/JSON-RPC（jsonrpc4j）使用demo/" rel="next" title="JSON-RPC（jsonrpc4j）使用demo">
-                <i class="fa fa-chevron-left"></i> JSON-RPC（jsonrpc4j）使用demo
+              <a href="/2016/04/14/CVP认证学习笔记--(何小成)005--实现多场景切换/" rel="next" title="CVP认证学习笔记--(何小成)005--实现多场景切换">
+                <i class="fa fa-chevron-left"></i> CVP认证学习笔记--(何小成)005--实现多场景切换
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/04/16/CVP认证学习笔记--(何小成)006--实现场景切换特效/" rel="prev" title="CVP认证学习笔记--(何小成)006--实现场景切换特效">
+                CVP认证学习笔记--(何小成)006--实现场景切换特效 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -657,15 +690,15 @@
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="http://7xnnwn.com1.z0.glb.clouddn.com/200002.png"
+               src="/avatar.png"
                alt="Henry He" />
           <p class="site-author-name" itemprop="name">Henry He</p>
-          <p class="site-description motion-element" itemprop="description">Blog of Henry</p>
+          <p class="site-description motion-element" itemprop="description">我们不生产代码，我们只是API的搬运工</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-count">33</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -673,7 +706,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -682,7 +715,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">19</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -693,6 +726,35 @@
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/hjcenry" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/hjcenry" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/2996874513/profile?topnav=1&wvr=6&is_all=1" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
           
         </div>
 
@@ -727,7 +789,9 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<div class="copyright" >
   
   &copy; 
   <span itemprop="copyrightYear">2016</span>
@@ -735,6 +799,7 @@
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Henry He</span>
+  
 </div>
 
 <div class="powered-by">
@@ -744,11 +809,27 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
+    NexT.Mist
   </a>
 </div>
 
         
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
+
+
 
         
       </div>
@@ -859,6 +940,11 @@
   
 
   
+
+  
+<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
+</script>
+
 
   
 
