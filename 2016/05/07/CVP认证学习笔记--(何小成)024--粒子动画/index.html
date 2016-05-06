@@ -86,10 +86,23 @@
 <meta property="og:url" content="http://hjcenry.github.io/2016/05/07/CVP认证学习笔记--(何小成)024--粒子动画/index.html">
 <meta property="og:site_name" content="Henry Blog">
 <meta property="og:description" content="概念本节课介绍如何使用在cocos中使用粒子动画，其中可以使用cocos中包含的11种系统定义好的粒子动画，也可以使用粒子编辑器自定义粒子动画，然后在cocos代码中使用自己定义的粒子动画。">
-<meta property="og:updated_time" content="2016-05-06T16:58:23.000Z">
+<meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-12@2x.png">
+<meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-2@2x.png">
+<meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-3@2x.png">
+<meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-4@2x.png">
+<meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-5@2x.png">
+<meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-6@2x.png">
+<meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-7@2x.png">
+<meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-8@2x.png">
+<meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-9@2x.png">
+<meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-10@2x.png">
+<meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-11@2x.png">
+<meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-1@2x.png">
+<meta property="og:updated_time" content="2016-05-06T17:04:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CVP认证学习笔记--(何小成)024--粒子动画">
 <meta name="twitter:description" content="概念本节课介绍如何使用在cocos中使用粒子动画，其中可以使用cocos中包含的11种系统定义好的粒子动画，也可以使用粒子编辑器自定义粒子动画，然后在cocos代码中使用自己定义的粒子动画。">
+<meta name="twitter:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-12@2x.png">
 
 
 
@@ -358,18 +371,18 @@
 
       
         <h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>本节课介绍如何使用在cocos中使用粒子动画，其中可以使用cocos中包含的11种系统定义好的粒子动画，也可以使用粒子编辑器自定义粒子动画，然后在cocos代码中使用自己定义的粒子动画。<a id="more"></a>系统的11种默认粒子动画我分别截了图，不过粒子动画由于是动画，我截图是静态图，可能效果还是不大明显，大家还是用实际代码来看效果比较好</p>
-<h4 id="爆炸粒子效果"><a href="#爆炸粒子效果" class="headerlink" title="爆炸粒子效果"></a>爆炸粒子效果</h4><p>ParticleExplosion。属于半径模式。<br>![爆炸粒子效果](<a href="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-12@2x.png）" target="_blank" rel="external">http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-12@2x.png）</a></p>
-<h4 id="火焰粒子效果"><a href="#火焰粒子效果" class="headerlink" title="火焰粒子效果"></a>火焰粒子效果</h4><p>ParticleFire。属于重力径模式。<br>![火焰粒子效果](<a href="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-2@2x.png）" target="_blank" rel="external">http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-2@2x.png）</a></p>
-<h4 id="烟花粒子效果"><a href="#烟花粒子效果" class="headerlink" title="烟花粒子效果"></a>烟花粒子效果</h4><p>ParticleFireworks。属于重力模式。<br>![烟花粒子效果](<a href="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-3@2x.png）" target="_blank" rel="external">http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-3@2x.png）</a></p>
-<h4 id="花粒子效果"><a href="#花粒子效果" class="headerlink" title="花粒子效果"></a>花粒子效果</h4><p>ParticleFlower。属于重力模式。<br>![花粒子效果](<a href="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-4@2x.png）" target="_blank" rel="external">http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-4@2x.png）</a></p>
-<h4 id="星系粒子效果"><a href="#星系粒子效果" class="headerlink" title="星系粒子效果"></a>星系粒子效果</h4><p>ParticleGalaxy。属于半径模式。<br>![星系粒子效果](<a href="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-5@2x.png）" target="_blank" rel="external">http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-5@2x.png）</a></p>
-<h4 id="流星粒子效果"><a href="#流星粒子效果" class="headerlink" title="流星粒子效果"></a>流星粒子效果</h4><p>ParticleMeteor。属于重力模式。<br>![流星粒子效果](<a href="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-6@2x.png）" target="_blank" rel="external">http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-6@2x.png）</a></p>
-<h4 id="漩涡粒子效果"><a href="#漩涡粒子效果" class="headerlink" title="漩涡粒子效果"></a>漩涡粒子效果</h4><p>ParticleSpiral。属于半径模式。<br>![漩涡粒子效果](<a href="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-7@2x.png）" target="_blank" rel="external">http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-7@2x.png）</a></p>
-<h4 id="雪粒子效果"><a href="#雪粒子效果" class="headerlink" title="雪粒子效果"></a>雪粒子效果</h4><p>ParticleSnow。属于重力模式。<br>![雪粒子效果](<a href="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-8@2x.png）" target="_blank" rel="external">http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-8@2x.png）</a></p>
-<h4 id="烟粒子效果"><a href="#烟粒子效果" class="headerlink" title="烟粒子效果"></a>烟粒子效果</h4><p>ParticleSmoke。属于重力模式。<br>![烟粒子效果](<a href="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-9@2x.png）" target="_blank" rel="external">http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-9@2x.png）</a></p>
-<h4 id="太阳粒子效果"><a href="#太阳粒子效果" class="headerlink" title="太阳粒子效果"></a>太阳粒子效果</h4><p>ParticleSun。属于重力模式。<br>![太阳粒子效果](<a href="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-10@2x.png）" target="_blank" rel="external">http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-10@2x.png）</a></p>
-<h4 id="雨粒子效果"><a href="#雨粒子效果" class="headerlink" title="雨粒子效果"></a>雨粒子效果</h4><p>ParticleRain。属于重力模式<br>![雨粒子效果](<a href="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-11@2x.png）" target="_blank" rel="external">http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-11@2x.png）</a></p>
-<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><h4 id="制作粒子动画"><a href="#制作粒子动画" class="headerlink" title="制作粒子动画"></a>制作粒子动画</h4><p>如果需要系统的粒子动画不能满足需求，可以使用粒子编辑器自己编辑一个粒子动画，我在mac系统使用的是ParticleDesigner，打开之后，有多种模板可以进行选择，选择完模板之后，再对各种细节进行调整，知道调整出满意的粒子动画，如下图：<br>![ParticleDesigner](<a href="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-1@2x.png）" target="_blank" rel="external">http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-1@2x.png）</a><br>其中包括了调整面板以及预览面板，当调整结果满意之后，点击导出即可在相应的文件夹下导出程序中所需要的plist文件和png图片。</p>
+<h4 id="爆炸粒子效果"><a href="#爆炸粒子效果" class="headerlink" title="爆炸粒子效果"></a>爆炸粒子效果</h4><p>ParticleExplosion。属于半径模式。<br><img src="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-12@2x.png" alt="爆炸粒子效果"></p>
+<h4 id="火焰粒子效果"><a href="#火焰粒子效果" class="headerlink" title="火焰粒子效果"></a>火焰粒子效果</h4><p>ParticleFire。属于重力径模式。<br><img src="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-2@2x.png" alt="火焰粒子效果"></p>
+<h4 id="烟花粒子效果"><a href="#烟花粒子效果" class="headerlink" title="烟花粒子效果"></a>烟花粒子效果</h4><p>ParticleFireworks。属于重力模式。<br><img src="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-3@2x.png" alt="烟花粒子效果"></p>
+<h4 id="花粒子效果"><a href="#花粒子效果" class="headerlink" title="花粒子效果"></a>花粒子效果</h4><p>ParticleFlower。属于重力模式。<br><img src="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-4@2x.png" alt="花粒子效果"></p>
+<h4 id="星系粒子效果"><a href="#星系粒子效果" class="headerlink" title="星系粒子效果"></a>星系粒子效果</h4><p>ParticleGalaxy。属于半径模式。<br><img src="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-5@2x.png" alt="星系粒子效果"></p>
+<h4 id="流星粒子效果"><a href="#流星粒子效果" class="headerlink" title="流星粒子效果"></a>流星粒子效果</h4><p>ParticleMeteor。属于重力模式。<br><img src="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-6@2x.png" alt="流星粒子效果"></p>
+<h4 id="漩涡粒子效果"><a href="#漩涡粒子效果" class="headerlink" title="漩涡粒子效果"></a>漩涡粒子效果</h4><p>ParticleSpiral。属于半径模式。<br><img src="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-7@2x.png" alt="漩涡粒子效果"></p>
+<h4 id="雪粒子效果"><a href="#雪粒子效果" class="headerlink" title="雪粒子效果"></a>雪粒子效果</h4><p>ParticleSnow。属于重力模式。<br><img src="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-8@2x.png" alt="雪粒子效果"></p>
+<h4 id="烟粒子效果"><a href="#烟粒子效果" class="headerlink" title="烟粒子效果"></a>烟粒子效果</h4><p>ParticleSmoke。属于重力模式。<br><img src="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-9@2x.png" alt="烟粒子效果"></p>
+<h4 id="太阳粒子效果"><a href="#太阳粒子效果" class="headerlink" title="太阳粒子效果"></a>太阳粒子效果</h4><p>ParticleSun。属于重力模式。<br><img src="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-10@2x.png" alt="太阳粒子效果"></p>
+<h4 id="雨粒子效果"><a href="#雨粒子效果" class="headerlink" title="雨粒子效果"></a>雨粒子效果</h4><p>ParticleRain。属于重力模式<br><img src="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-11@2x.png" alt="雨粒子效果"></p>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><h4 id="制作粒子动画"><a href="#制作粒子动画" class="headerlink" title="制作粒子动画"></a>制作粒子动画</h4><p>如果需要系统的粒子动画不能满足需求，可以使用粒子编辑器自己编辑一个粒子动画，我在mac系统使用的是ParticleDesigner，打开之后，有多种模板可以进行选择，选择完模板之后，再对各种细节进行调整，知道调整出满意的粒子动画，如下图：<br><img src="http://7xnnwn.com1.z0.glb.clouddn.com/QQ20160507-1@2x.png" alt="ParticleDesigner"><br>其中包括了调整面板以及预览面板，当调整结果满意之后，点击导出即可在相应的文件夹下导出程序中所需要的plist文件和png图片。</p>
 <h4 id="创建粒子"><a href="#创建粒子" class="headerlink" title="创建粒子"></a>创建粒子</h4><p>无论是使用系统提供的动画还是自定义的动画，首先需要创建相应的对象<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 使用自定义粒子动画</span></span><br><span class="line"><span class="keyword">var</span> myp = <span class="keyword">new</span> cc.ParticleSystem(<span class="string">"res/lizi.plist"</span>);</span><br><span class="line"><span class="comment">// 使用系统提供的粒子动画</span></span><br><span class="line"><span class="keyword">var</span> fire = <span class="keyword">new</span> cc.ParticleFire();</span><br></pre></td></tr></table></figure></p>
 <h4 id="设置纹理"><a href="#设置纹理" class="headerlink" title="设置纹理"></a>设置纹理</h4><p>系统粒子动画需要为动画设置纹理，自定义粒子动画一般会将粒子动画使用的纹理写在plist中<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fire.texture = cc.textureCache.addImage(<span class="string">"res/lizi.plist.png"</span>);</span><br></pre></td></tr></table></figure></p>
 <h4 id="添加动画到图层"><a href="#添加动画到图层" class="headerlink" title="添加动画到图层"></a>添加动画到图层</h4><p>最后将粒子动画添加到图层，就能看见粒子动画在屏幕中播放<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.addChild(fire);</span><br><span class="line">fire.setPosition(<span class="number">200</span>, <span class="number">200</span>);</span><br></pre></td></tr></table></figure></p>
