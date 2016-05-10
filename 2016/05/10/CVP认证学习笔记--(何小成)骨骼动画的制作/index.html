@@ -80,18 +80,30 @@
 
 
 
-<meta name="description" content="这节课的内容讲的是如何在cocos中添加自定义场景，一个看似很简单的内容，包含了很多cocos的运行机制原理。以前我们都直接在app.js中写代码，然后运行查看效果，这节课详细讲解了cocos从启动到运行的一个流程，分为以下几步：">
+<meta name="description" content="本文主要复习下骨骼动画的制作过程，上一篇帖子023–%E5%8A%A0%E8%BD%BD%E9%AA%A8%E9%AA%BC%E5%8A%A8%E7%94%BB/)简单介绍了cocos中对于骨骼动画的使用，本文主要从骨骼动画制作的角度来讲解。
+导入资源制作之前准备好所需要的图片资源，然后倒入到cocos studio中，如下图：
+添加皮肤资源中的皮肤一个一个拖放到场景中，使小图片大致能拼出来一个完">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CVP认证学习笔记--(何小成)004--实现自定义场景">
-<meta property="og:url" content="http://hjcenry.github.io/2016/04/13/CVP认证学习笔记--(何小成)004--实现自定义场景/index.html">
+<meta property="og:title" content="CVP认证学习笔记--(何小成)骨骼动画的制作">
+<meta property="og:url" content="http://hjcenry.github.io/2016/05/10/CVP认证学习笔记--(何小成)骨骼动画的制作/index.html">
 <meta property="og:site_name" content="Henry Blog">
-<meta property="og:description" content="这节课的内容讲的是如何在cocos中添加自定义场景，一个看似很简单的内容，包含了很多cocos的运行机制原理。以前我们都直接在app.js中写代码，然后运行查看效果，这节课详细讲解了cocos从启动到运行的一个流程，分为以下几步：">
-<meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/relation.png">
-<meta property="og:updated_time" content="2016-05-06T17:02:55.000Z">
+<meta property="og:description" content="本文主要复习下骨骼动画的制作过程，上一篇帖子023–%E5%8A%A0%E8%BD%BD%E9%AA%A8%E9%AA%BC%E5%8A%A8%E7%94%BB/)简单介绍了cocos中对于骨骼动画的使用，本文主要从骨骼动画制作的角度来讲解。
+导入资源制作之前准备好所需要的图片资源，然后倒入到cocos studio中，如下图：
+添加皮肤资源中的皮肤一个一个拖放到场景中，使小图片大致能拼出来一个完">
+<meta property="og:image" content="http://cdn.cocimg.com/bbs/attachment/Fid_72/72_319828_1a202fb1ffd1025.png">
+<meta property="og:image" content="http://cdn.cocimg.com/bbs/attachment/Fid_72/72_319828_55529c9535d5bb4.png">
+<meta property="og:image" content="http://cdn.cocimg.com/bbs/attachment/Fid_72/72_319828_3ad23acff07741b.png">
+<meta property="og:image" content="http://cdn.cocimg.com/bbs/attachment/Fid_72/72_319828_a02834c9d8347ca.png">
+<meta property="og:image" content="http://cdn.cocimg.com/bbs/attachment/Fid_72/72_319828_40c0db20e072450.png">
+<meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/donghua.png">
+<meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/1111.gif">
+<meta property="og:updated_time" content="2016-05-10T14:50:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CVP认证学习笔记--(何小成)004--实现自定义场景">
-<meta name="twitter:description" content="这节课的内容讲的是如何在cocos中添加自定义场景，一个看似很简单的内容，包含了很多cocos的运行机制原理。以前我们都直接在app.js中写代码，然后运行查看效果，这节课详细讲解了cocos从启动到运行的一个流程，分为以下几步：">
-<meta name="twitter:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/relation.png">
+<meta name="twitter:title" content="CVP认证学习笔记--(何小成)骨骼动画的制作">
+<meta name="twitter:description" content="本文主要复习下骨骼动画的制作过程，上一篇帖子023–%E5%8A%A0%E8%BD%BD%E9%AA%A8%E9%AA%BC%E5%8A%A8%E7%94%BB/)简单介绍了cocos中对于骨骼动画的使用，本文主要从骨骼动画制作的角度来讲解。
+导入资源制作之前准备好所需要的图片资源，然后倒入到cocos studio中，如下图：
+添加皮肤资源中的皮肤一个一个拖放到场景中，使小图片大致能拼出来一个完">
+<meta name="twitter:image" content="http://cdn.cocimg.com/bbs/attachment/Fid_72/72_319828_1a202fb1ffd1025.png">
 
 
 
@@ -109,7 +121,7 @@
   };
 </script>
 
-  <title> CVP认证学习笔记--(何小成)004--实现自定义场景 | Henry Blog </title>
+  <title> CVP认证学习笔记--(何小成)骨骼动画的制作 | Henry Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -289,7 +301,7 @@
             
             
               
-                CVP认证学习笔记--(何小成)004--实现自定义场景
+                CVP认证学习笔记--(何小成)骨骼动画的制作
               
             
           </h1>
@@ -301,8 +313,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-13T07:29:00+08:00" content="2016-04-13">
-              2016-04-13
+            <time itemprop="dateCreated" datetime="2016-05-10T22:44:00+08:00" content="2016-05-10">
+              2016-05-10
             </time>
           </span>
 
@@ -331,8 +343,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/04/13/CVP认证学习笔记--(何小成)004--实现自定义场景/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/13/CVP认证学习笔记--(何小成)004--实现自定义场景/" itemprop="commentsCount"></span>
+                <a href="/2016/05/10/CVP认证学习笔记--(何小成)骨骼动画的制作/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/10/CVP认证学习笔记--(何小成)骨骼动画的制作/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -359,19 +371,14 @@
       
 
       
-        <p>这节课的内容讲的是如何在cocos中添加自定义场景，一个看似很简单的内容，包含了很多cocos的运行机制原理。<br>以前我们都直接在app.js中写代码，然后运行查看效果，这节课详细讲解了cocos从启动到运行的一个流程，分为以下几步：<br><a id="more"></a></p>
-<h3 id="index-html"><a href="#index-html" class="headerlink" title="index.html"></a>index.html</h3><p>由于cocosjs基于h5进行开发，因此启动还是从html页面为入口，在index.html中，有一下几句代码：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;canvas id=<span class="string">"gameCanvas"</span> width=<span class="string">"480"</span> height=<span class="string">"720"</span>&gt;&lt;/canvas&gt;</span><br></pre></td></tr></table></figure></p>
-<p>可以看出，整个cocos的游戏是基于canvas进行绘制的，第一句就定义了一个gameCanvas；<br>然后加载了CCBoot.js，记载一些cocos</p>
-<h3 id="cocos开发库及资源配置加载"><a href="#cocos开发库及资源配置加载" class="headerlink" title="cocos开发库及资源配置加载"></a>cocos开发库及资源配置加载</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">src=<span class="string">"frameworks/cocos2d-html5/CCBoot.js"</span></span><br></pre></td></tr></table></figure>
-<p>cocos通过CCBoot.js加载cocos的启动文件，可以点开CCBoot.js查看cocos启动时都加载些什么内容，其中就能看到project.json也是在这个过程中加载的，project.json中，定义了cocos游戏的一些配置参数，其中包括加载的js文件，使用的引擎，使用的模块等信息。</p>
-<h3 id="main-js"><a href="#main-js" class="headerlink" title="main.js"></a>main.js</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cocos src=<span class="string">"main.js"</span></span><br></pre></td></tr></table></figure>
-<p>当CCBoot.js启动完之后，才轮到man.js出场，按照以往的惯例，main函数一般都是程序的入口，main.js中的关键函数如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">cc.game.onStart = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"><span class="comment">//判断当前项目是native game还是h5(我们写的这些代码可以直接打包app)</span></span><br><span class="line"><span class="comment">//如果是 h5则删掉loading的DOM节点</span></span><br><span class="line"><span class="keyword">if</span>(!cc.sys.isNative %<span class="number">26</span>%<span class="number">26</span> <span class="built_in">document</span>.getElementById(<span class="string">"cocosLoading"</span>)) <span class="comment">//If referenced loading.js, please remove it</span></span><br><span class="line"><span class="built_in">document</span>.body.removeChild(<span class="built_in">document</span>.getElementById(<span class="string">"cocosLoading"</span>));</span><br><span class="line"><span class="comment">// Pass true to enable retina display, on Android disabled by default to improve performance</span></span><br><span class="line">cc.view.enableRetina(cc.sys.os === cc.sys.OS_IOS ? <span class="literal">true</span> : <span class="literal">false</span>);</span><br><span class="line"><span class="comment">// Adjust viewport meta</span></span><br><span class="line">cc.view.adjustViewPort(<span class="literal">true</span>);</span><br><span class="line"><span class="comment">// Setup the resolution policy and design resolution size</span></span><br><span class="line">cc.view.setDesignResolutionSize(<span class="number">800</span>, <span class="number">450</span>, cc.ResolutionPolicy.SHOW_ALL);</span><br><span class="line"><span class="comment">// Instead of set design resolution, you can also set the real pixel resolution size</span></span><br><span class="line"><span class="comment">// Uncomment the following line and delete the previous line.</span></span><br><span class="line"><span class="comment">// cc.view.setRealPixelResolution(960, 640, cc.ResolutionPolicy.SHOW_ALL);</span></span><br><span class="line"><span class="comment">// The game will be resized when browser size change</span></span><br><span class="line">cc.view.resizeWithBrowserSize(<span class="literal">true</span>);</span><br><span class="line"><span class="comment">//以上4行主要来设置屏幕的适配和窗口,SHOW_ALL表示适配全屏幕</span></span><br><span class="line"><span class="comment">//load resources</span></span><br><span class="line"><span class="comment">// 预加载所有纹理图片资源，加载完成之后回调function,g_resources在哪定义的？一会揭晓</span></span><br><span class="line">cc.LoaderScene.preload(g_resources, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="comment">//当资源加载完成，调用导演类来实现第一个场景的加载HelloWorldScene,src/app.js定义的</span></span><br><span class="line"><span class="comment">//cc.director.runScene(new HelloWorldScene());</span></span><br><span class="line"><span class="comment">//现在我们要定义一个新的场景类，然后加载</span></span><br><span class="line">cc.director.runScene(<span class="keyword">new</span> myScene());<span class="comment">//先保存这个文件，然后编辑src/myscene.js</span></span><br><span class="line">&#125;, <span class="keyword">this</span>);</span><br><span class="line">&#125;;</span><br><span class="line">cc.game.run();</span><br></pre></td></tr></table></figure></p>
-<p>可以看到main.js加载了cocos的一些核心类，其中最重要的就是加载了游戏的第一个运行的场景，这里我已经改成了我自己的场景myScene，通过main.js启动第一个场景之后，整个游戏才真正的跑起来了。</p>
-<p>以上三个步骤就是cocos项目的启动的一个大概过程，其中讲到了一个场景的概念，我个人认为cocos的这些设计理念特别符合我们人类的主观认识，把游戏和电影中的一些内容对应。cocos中有导演、场景、图层和精灵的概念。一般来说，一场电影中只会有一个导演，cocos游戏中，一般会有一个导演类；一场电影会有多个镜头，对应cocos中就是多个场景，而同一时刻，只会同时运行一个场景，就像电影中不可能同时出现多个镜头；电影场景中的房屋，天空，大地，就对应cocos中的图层；而房屋中的桌椅板凳、天空中的云、地面上的人，就对应cocos中的精灵。通过电影的这么一个过程，我们比较能够容易的理解cocos的一个机制原理。</p>
-<p><img src="http://7xnnwn.com1.z0.glb.clouddn.com/relation.png" alt="cocos中关系图"></p>
-<p>以上基本就是课程的全部内容，然后作业呢，也跟课程一样，要完成很简单，但背后内容，还真的是很多的，我自定义的场景内容如下：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myLayer = cc.Layer.extend(&#123;</span><br><span class="line">    ctor:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">this</span>._super();</span><br><span class="line">        <span class="keyword">var</span> size = cc.winSize;</span><br><span class="line">        <span class="keyword">var</span> txt1 = <span class="keyword">new</span> cc.LabelTTF(<span class="string">"这里是游戏场景"</span>,<span class="string">""</span>,<span class="number">50</span>);</span><br><span class="line">        txt1.setPosition(size.width/<span class="number">2</span>,size.height-txt1.height);</span><br><span class="line">        <span class="keyword">var</span> txt2 = <span class="keyword">new</span> cc.LabelTTF(<span class="string">"我的名字是何金成"</span>,<span class="string">""</span>,<span class="number">50</span>);</span><br><span class="line">        txt2.setPosition(size.width/<span class="number">2</span>,txt1.height-txt1.height/<span class="number">2</span>);</span><br><span class="line">        <span class="keyword">this</span>.addChild(txt1);</span><br><span class="line">        <span class="keyword">this</span>.addChild(txt2);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> myScene = cc.Scene.extend(&#123;</span><br><span class="line">    ctor:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">this</span>._super();</span><br><span class="line">        <span class="keyword">var</span> layer1 = <span class="keyword">new</span> myLayer();</span><br><span class="line">        <span class="keyword">this</span>.addChild(layer1);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h3 id="最后运行效果"><a href="#最后运行效果" class="headerlink" title="最后运行效果"></a>最后运行效果</h3><p><a href="http://www.cocoscvp.com/usercode/2016_04_09/8ab000a365413ab9ebdb5a3533571828bbdd552f/" target="_blank" rel="external">http://www.cocoscvp.com/usercode/2016_04_09/8ab000a365413ab9ebdb5a3533571828bbdd552f/</a></p>
+        <p>本文主要复习下骨骼动画的制作过程，<a href="http://hjcenry.github.io/2016/05/06/CVP%E8%AE%A4%E8%AF%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0--(%E4%BD%95%E5%B0%8F%E6%88%90">上一篇帖子</a>023–%E5%8A%A0%E8%BD%BD%E9%AA%A8%E9%AA%BC%E5%8A%A8%E7%94%BB/)简单介绍了cocos中对于骨骼动画的使用，本文主要从骨骼动画制作的角度来讲解。</p>
+<h3 id="导入资源"><a href="#导入资源" class="headerlink" title="导入资源"></a>导入资源</h3><p>制作之前准备好所需要的图片资源，然后倒入到cocos studio中，如下图：<br><img src="http://cdn.cocimg.com/bbs/attachment/Fid_72/72_319828_1a202fb1ffd1025.png" alt="导入资源"></p>
+<h3 id="添加皮肤"><a href="#添加皮肤" class="headerlink" title="添加皮肤"></a>添加皮肤</h3><p>资源中的皮肤一个一个拖放到场景中，使小图片大致能拼出来一个完整的图片，如下图：<br><img src="http://cdn.cocimg.com/bbs/attachment/Fid_72/72_319828_55529c9535d5bb4.png" alt="添加皮肤"></p>
+<h3 id="添加骨骼"><a href="#添加骨骼" class="headerlink" title="添加骨骼"></a>添加骨骼</h3><p>根据人物的骨骼特征，为皮肤添加骨骼，如下图：<br><img src="http://cdn.cocimg.com/bbs/attachment/Fid_72/72_319828_3ad23acff07741b.png" alt="添加骨骼"></p>
+<h3 id="绑定父关系"><a href="#绑定父关系" class="headerlink" title="绑定父关系"></a>绑定父关系</h3><p>把具有相互关系的骨骼绑定起来，使骨骼之间能够作为整体进行动画，如头部应该绑定身体为父关系，而手腕应该绑定手臂为父关系，如下图：<br><img src="http://cdn.cocimg.com/bbs/attachment/Fid_72/72_319828_a02834c9d8347ca.png" alt="绑定父关系"></p>
+<h3 id="制作动画"><a href="#制作动画" class="headerlink" title="制作动画"></a>制作动画</h3><p>骨骼绑定之后，就可以编辑动画，动画编辑即选择选择动画模式，然后选择相应的图层，在下面时间轴上的关键帧上进行改变，中间的补间动画cocos studio会自动创建，如下图：<br><img src="http://cdn.cocimg.com/bbs/attachment/Fid_72/72_319828_40c0db20e072450.png" alt="制作动画"></p>
+<h3 id="导出资源"><a href="#导出资源" class="headerlink" title="导出资源"></a>导出资源</h3><p>确定制作完成，并经过了精细的调整之后，就可以导出动画了，导出的操作很简单，即选择文件，然后选择导出项目，如下图：<br><img src="http://7xnnwn.com1.z0.glb.clouddn.com/donghua.png" alt="导出资源"><br>导出之后可以看到相应的文件夹下有png，plist和json三个文件，即上一篇文章中说到的cocos中需要使用到的骨骼动画资源，至此，骨骼动画制作完成！ 整个过程感觉是一个挺细心的活，作为一个程序来说，做了一个骨骼动画之后，我真心佩服美术，那些游戏中无论活灵活现的主人公，还是酷炫吊炸天特效，都是美术们这样一帧一帧调出来的，真的是我心目中的艺术家，衷心的点个赞！</p>
+<h3 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h3><p>制作完之后，我加在了上一节课的作业的开始界面和帮助界面中，如下图：<br><img src="http://7xnnwn.com1.z0.glb.clouddn.com/1111.gif" alt="效果图"><br>作业地址：<a href="http://www.cocoscvp.com/usercode/b09ecc9894fe6ab8a1ba17f5d5348b9a215038a6/" target="_blank" rel="external">http://www.cocoscvp.com/usercode/b09ecc9894fe6ab8a1ba17f5d5348b9a215038a6/</a></p>
 
       
     </div>
@@ -429,17 +436,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/04/08/CVP认证学习笔记--(何小成)003--实现文本菜单层/" rel="next" title="CVP认证学习笔记--(何小成)003--实现文本菜单层">
-                <i class="fa fa-chevron-left"></i> CVP认证学习笔记--(何小成)003--实现文本菜单层
+              <a href="/2016/05/07/CVP认证学习笔记--(何小成)025--音乐和音效/" rel="next" title="CVP认证学习笔记--(何小成)025--音乐和音效">
+                <i class="fa fa-chevron-left"></i> CVP认证学习笔记--(何小成)025--音乐和音效
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/04/14/CVP认证学习笔记--(何小成)005--实现多场景切换/" rel="prev" title="CVP认证学习笔记--(何小成)005--实现多场景切换">
-                CVP认证学习笔记--(何小成)005--实现多场景切换 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -454,10 +457,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/04/13/CVP认证学习笔记--(何小成)004--实现自定义场景/"
-     data-title="CVP认证学习笔记--(何小成)004--实现自定义场景"
+        <div class="ds-share flat" data-thread-key="2016/05/10/CVP认证学习笔记--(何小成)骨骼动画的制作/"
+     data-title="CVP认证学习笔记--(何小成)骨骼动画的制作"
      data-content=""
-     data-url="http://hjcenry.github.io/2016/04/13/CVP认证学习笔记--(何小成)004--实现自定义场景/">
+     data-url="http://hjcenry.github.io/2016/05/10/CVP认证学习笔记--(何小成)骨骼动画的制作/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -487,8 +490,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/04/13/CVP认证学习笔记--(何小成)004--实现自定义场景/"
-           data-title="CVP认证学习笔记--(何小成)004--实现自定义场景" data-url="http://hjcenry.github.io/2016/04/13/CVP认证学习笔记--(何小成)004--实现自定义场景/">
+      <div class="ds-thread" data-thread-key="2016/05/10/CVP认证学习笔记--(何小成)骨骼动画的制作/"
+           data-title="CVP认证学习笔记--(何小成)骨骼动画的制作" data-url="http://hjcenry.github.io/2016/05/10/CVP认证学习笔记--(何小成)骨骼动画的制作/">
       </div>
     
   </div>
@@ -608,7 +611,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#index-html"><span class="nav-number">1.</span> <span class="nav-text">index.html</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cocos开发库及资源配置加载"><span class="nav-number">2.</span> <span class="nav-text">cocos开发库及资源配置加载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#main-js"><span class="nav-number">3.</span> <span class="nav-text">main.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最后运行效果"><span class="nav-number">4.</span> <span class="nav-text">最后运行效果</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#导入资源"><span class="nav-number">1.</span> <span class="nav-text">导入资源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加皮肤"><span class="nav-number">2.</span> <span class="nav-text">添加皮肤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加骨骼"><span class="nav-number">3.</span> <span class="nav-text">添加骨骼</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#绑定父关系"><span class="nav-number">4.</span> <span class="nav-text">绑定父关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#制作动画"><span class="nav-number">5.</span> <span class="nav-text">制作动画</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#导出资源"><span class="nav-number">6.</span> <span class="nav-text">导出资源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最终效果"><span class="nav-number">7.</span> <span class="nav-text">最终效果</span></a></li></ol></div>
             
           </div>
         </section>
