@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Java,游戏服务器,SLG," />
 
 
 
@@ -80,27 +80,24 @@
 
 
 
-<meta name="description" content="SLG手游Java服务器的设计与开发——架构分析
-文章版权归腾讯GAD所有，禁止匿名转载；禁止商业使用；禁止个人使用。
+<meta name="description" content="文章版权归腾讯GAD所有，禁止匿名转载；禁止商业使用；禁止个人使用。
 
-前言从去年12月份开始，到现在，我全程参与了公司一款SLG手游的研发，负责整个游戏的服务端部分。这也是我第一次单独负责一款网游的服务端开发，整个研发过程，也让我的各方面技术提升了不少。目前这款游戏正在紧张的测试中，预计下周左右会在XY渠道进行一轮封测，以测试玩家对我们的游戏的反">
+前言从去年12月份开始，到现在，我全程参与了公司一款SLG手游的研发，负责整个游戏的服务端部分。这也是我第一次单独负责一款网游的服务端开发，整个研发过程，也让我的各方面技术提升了不少。目前这款游戏正在紧张的测试中，预计下周左右会在XY渠道进行一轮封测，以测试玩家对我们的游戏的反馈数据。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Henry Blog">
-<meta property="og:url" content="http://hjcenry.github.io/2016/08/03/SLG手游Java服务器的设计与开发——架构分析/index.html">
+<meta property="og:title" content="SLG手游Java服务器的设计与开发——架构分析">
+<meta property="og:url" content="http://hjcenry.github.io/2016/08/14/SLG手游Java服务器的设计与开发——架构分析/index.html">
 <meta property="og:site_name" content="Henry Blog">
-<meta property="og:description" content="SLG手游Java服务器的设计与开发——架构分析
-文章版权归腾讯GAD所有，禁止匿名转载；禁止商业使用；禁止个人使用。
+<meta property="og:description" content="文章版权归腾讯GAD所有，禁止匿名转载；禁止商业使用；禁止个人使用。
 
-前言从去年12月份开始，到现在，我全程参与了公司一款SLG手游的研发，负责整个游戏的服务端部分。这也是我第一次单独负责一款网游的服务端开发，整个研发过程，也让我的各方面技术提升了不少。目前这款游戏正在紧张的测试中，预计下周左右会在XY渠道进行一轮封测，以测试玩家对我们的游戏的反">
+前言从去年12月份开始，到现在，我全程参与了公司一款SLG手游的研发，负责整个游戏的服务端部分。这也是我第一次单独负责一款网游的服务端开发，整个研发过程，也让我的各方面技术提升了不少。目前这款游戏正在紧张的测试中，预计下周左右会在XY渠道进行一轮封测，以测试玩家对我们的游戏的反馈数据。">
 <meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/%E6%9E%B6%E6%9E%84%E5%85%B3%E7%B3%BB%E5%9B%BE.png">
 <meta property="og:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%9B%BE.png">
-<meta property="og:updated_time" content="2016-08-13T16:02:09.000Z">
+<meta property="og:updated_time" content="2016-08-13T16:08:08.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Henry Blog">
-<meta name="twitter:description" content="SLG手游Java服务器的设计与开发——架构分析
-文章版权归腾讯GAD所有，禁止匿名转载；禁止商业使用；禁止个人使用。
+<meta name="twitter:title" content="SLG手游Java服务器的设计与开发——架构分析">
+<meta name="twitter:description" content="文章版权归腾讯GAD所有，禁止匿名转载；禁止商业使用；禁止个人使用。
 
-前言从去年12月份开始，到现在，我全程参与了公司一款SLG手游的研发，负责整个游戏的服务端部分。这也是我第一次单独负责一款网游的服务端开发，整个研发过程，也让我的各方面技术提升了不少。目前这款游戏正在紧张的测试中，预计下周左右会在XY渠道进行一轮封测，以测试玩家对我们的游戏的反">
+前言从去年12月份开始，到现在，我全程参与了公司一款SLG手游的研发，负责整个游戏的服务端部分。这也是我第一次单独负责一款网游的服务端开发，整个研发过程，也让我的各方面技术提升了不少。目前这款游戏正在紧张的测试中，预计下周左右会在XY渠道进行一轮封测，以测试玩家对我们的游戏的反馈数据。">
 <meta name="twitter:image" content="http://7xnnwn.com1.z0.glb.clouddn.com/%E6%9E%B6%E6%9E%84%E5%85%B3%E7%B3%BB%E5%9B%BE.png">
 
 
@@ -119,7 +116,7 @@
   };
 </script>
 
-  <title>  | Henry Blog </title>
+  <title> SLG手游Java服务器的设计与开发——架构分析 | Henry Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -299,7 +296,7 @@
             
             
               
-                
+                SLG手游Java服务器的设计与开发——架构分析
               
             
           </h1>
@@ -311,19 +308,38 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-03T21:17:26+08:00" content="2016-08-03">
-              2016-08-03
+            <time itemprop="dateCreated" datetime="2016-08-14T00:07:00+08:00" content="2016-08-14">
+              2016-08-14
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/08/03/SLG手游Java服务器的设计与开发——架构分析/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/03/SLG手游Java服务器的设计与开发——架构分析/" itemprop="commentsCount"></span>
+                <a href="/2016/08/14/SLG手游Java服务器的设计与开发——架构分析/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/14/SLG手游Java服务器的设计与开发——架构分析/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -350,7 +366,7 @@
       
 
       
-        <h1 id="SLG手游Java服务器的设计与开发——架构分析"><a href="#SLG手游Java服务器的设计与开发——架构分析" class="headerlink" title="SLG手游Java服务器的设计与开发——架构分析"></a>SLG手游Java服务器的设计与开发——架构分析</h1><ul>
+        <ul>
 <li><code>文章版权归腾讯GAD所有，禁止匿名转载；禁止商业使用；禁止个人使用。</code></li>
 </ul>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>从去年12月份开始，到现在，我全程参与了公司一款SLG手游的研发，负责整个游戏的服务端部分。这也是我第一次单独负责一款网游的服务端开发，整个研发过程，也让我的各方面技术提升了不少。目前这款游戏正在紧张的测试中，预计下周左右会在XY渠道进行一轮封测，以测试玩家对我们的游戏的反馈数据。<a id="more"></a></p>
@@ -427,6 +443,16 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag">#Java</a>
+          
+            <a href="/tags/游戏服务器/" rel="tag">#游戏服务器</a>
+          
+            <a href="/tags/SLG/" rel="tag">#SLG</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
@@ -453,10 +479,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/08/03/SLG手游Java服务器的设计与开发——架构分析/"
-     data-title=""
+        <div class="ds-share flat" data-thread-key="2016/08/14/SLG手游Java服务器的设计与开发——架构分析/"
+     data-title="SLG手游Java服务器的设计与开发——架构分析"
      data-content=""
-     data-url="http://hjcenry.github.io/2016/08/03/SLG手游Java服务器的设计与开发——架构分析/">
+     data-url="http://hjcenry.github.io/2016/08/14/SLG手游Java服务器的设计与开发——架构分析/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -479,12 +505,15 @@
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/08/03/SLG手游Java服务器的设计与开发——架构分析/"
-           data-title="" data-url="http://hjcenry.github.io/2016/08/03/SLG手游Java服务器的设计与开发——架构分析/">
+      <div class="ds-thread" data-thread-key="2016/08/14/SLG手游Java服务器的设计与开发——架构分析/"
+           data-title="SLG手游Java服务器的设计与开发——架构分析" data-url="http://hjcenry.github.io/2016/08/14/SLG手游Java服务器的设计与开发——架构分析/">
       </div>
     
   </div>
@@ -546,7 +575,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-count">24</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -604,7 +633,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SLG手游Java服务器的设计与开发——架构分析"><span class="nav-number">1.</span> <span class="nav-text">SLG手游Java服务器的设计与开发——架构分析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#功能介绍"><span class="nav-number">1.2.</span> <span class="nav-text">功能介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#账号系统"><span class="nav-number">1.2.1.</span> <span class="nav-text">账号系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#君主模块"><span class="nav-number">1.2.2.</span> <span class="nav-text">君主模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#卡牌模块"><span class="nav-number">1.2.3.</span> <span class="nav-text">卡牌模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#装备模块"><span class="nav-number">1.2.4.</span> <span class="nav-text">装备模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#道具模块"><span class="nav-number">1.2.5.</span> <span class="nav-text">道具模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#建筑模块"><span class="nav-number">1.2.6.</span> <span class="nav-text">建筑模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#科技模块"><span class="nav-number">1.2.7.</span> <span class="nav-text">科技模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关卡模块"><span class="nav-number">1.2.8.</span> <span class="nav-text">关卡模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#竞技场"><span class="nav-number">1.2.9.</span> <span class="nav-text">竞技场</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#活动模块"><span class="nav-number">1.2.10.</span> <span class="nav-text">活动模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#国战模块"><span class="nav-number">1.2.11.</span> <span class="nav-text">国战模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#热更新"><span class="nav-number">1.2.12.</span> <span class="nav-text">热更新</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络通信"><span class="nav-number">1.3.</span> <span class="nav-text">网络通信</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据存储"><span class="nav-number">1.4.</span> <span class="nav-text">数据存储</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#架构设计"><span class="nav-number">1.5.</span> <span class="nav-text">架构设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#登录服务器"><span class="nav-number">1.5.1.</span> <span class="nav-text">登录服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑服务器"><span class="nav-number">1.5.2.</span> <span class="nav-text">逻辑服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件服务器"><span class="nav-number">1.5.3.</span> <span class="nav-text">文件服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支付服务器"><span class="nav-number">1.5.4.</span> <span class="nav-text">支付服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#国战服务器"><span class="nav-number">1.5.5.</span> <span class="nav-text">国战服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#聊天服务器"><span class="nav-number">1.5.6.</span> <span class="nav-text">聊天服务器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#系统架构"><span class="nav-number">1.6.</span> <span class="nav-text">系统架构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">1.7.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后续"><span class="nav-number">1.8.</span> <span class="nav-text">后续</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#功能介绍"><span class="nav-number">2.</span> <span class="nav-text">功能介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#账号系统"><span class="nav-number">2.1.</span> <span class="nav-text">账号系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#君主模块"><span class="nav-number">2.2.</span> <span class="nav-text">君主模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#卡牌模块"><span class="nav-number">2.3.</span> <span class="nav-text">卡牌模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#装备模块"><span class="nav-number">2.4.</span> <span class="nav-text">装备模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#道具模块"><span class="nav-number">2.5.</span> <span class="nav-text">道具模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#建筑模块"><span class="nav-number">2.6.</span> <span class="nav-text">建筑模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#科技模块"><span class="nav-number">2.7.</span> <span class="nav-text">科技模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关卡模块"><span class="nav-number">2.8.</span> <span class="nav-text">关卡模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#竞技场"><span class="nav-number">2.9.</span> <span class="nav-text">竞技场</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#活动模块"><span class="nav-number">2.10.</span> <span class="nav-text">活动模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#国战模块"><span class="nav-number">2.11.</span> <span class="nav-text">国战模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#热更新"><span class="nav-number">2.12.</span> <span class="nav-text">热更新</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络通信"><span class="nav-number">3.</span> <span class="nav-text">网络通信</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据存储"><span class="nav-number">4.</span> <span class="nav-text">数据存储</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#架构设计"><span class="nav-number">5.</span> <span class="nav-text">架构设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#登录服务器"><span class="nav-number">5.1.</span> <span class="nav-text">登录服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑服务器"><span class="nav-number">5.2.</span> <span class="nav-text">逻辑服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件服务器"><span class="nav-number">5.3.</span> <span class="nav-text">文件服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#支付服务器"><span class="nav-number">5.4.</span> <span class="nav-text">支付服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#国战服务器"><span class="nav-number">5.5.</span> <span class="nav-text">国战服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#聊天服务器"><span class="nav-number">5.6.</span> <span class="nav-text">聊天服务器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#系统架构"><span class="nav-number">6.</span> <span class="nav-text">系统架构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">7.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后续"><span class="nav-number">8.</span> <span class="nav-text">后续</span></a></li></ol></div>
             
           </div>
         </section>
