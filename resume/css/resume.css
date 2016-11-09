@@ -16,27 +16,31 @@
 .skill1 li,.skill2 li,.skill3 li,.skill4 li{
 	margin-bottom: 5px;
 }
-.skill2,.skill3,.skill4,.project2,.project2img{
+.skill2,.skill3,.skill4,.project2,.project2img,.project3,.project3img,.project4,.project4img{
 	display: none;
 }
 .skilllist,.project{
 	height: 500px;
 }
-.project1,.project2{
+.project1,.project2,.project3,.project4{
 	
 }
 .imgs{
 	height: 500px;
 }
 .worklogos{
-	height: 600px;
+	height: 450px;
 }
-.worklogo{
-	margin: 10px;
+.biglogo{
+	margin: 5px;
+	height: 110px;
+}
+.smalllogo{
+	margin: 5px;
+	height: 50px;
 }
 .pro{
 	float: left;
-	margin-right: 20px;
 }
 .arrows{
 	color: white;
@@ -55,4 +59,7 @@
 	opacity: 0.8;
 	transform: scale(1.2);
 	cursor: pointer;
+}
+.bookimg{
+	height: 400px;
 }
